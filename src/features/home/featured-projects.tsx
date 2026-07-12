@@ -12,7 +12,7 @@ import { ProjectCard } from '@/features/projects/project-card'
 export function FeaturedProjects() {
   const featured = projects.filter((project) => project.featured)
   return (
-    <section aria-label="精选作品" className="content-atmosphere py-20 sm:py-28">
+    <section aria-label="精选作品" className="theme-work py-20 sm:py-28">
       <Container>
         <SectionHeading index="02" title="精选作品" description="关于网站、应用与 AI 项目的创作记录。" href="/projects" linkLabel="查看全部作品" />
         <div className="mt-10 grid gap-5 md:grid-cols-2">{featured.map((project, index) => <ProjectCard key={project.slug} project={project} priority={index === 0} />)}</div>

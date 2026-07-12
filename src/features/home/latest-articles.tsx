@@ -11,7 +11,7 @@ import { ArticleCard } from '@/features/articles/article-card'
 
 export function LatestArticles() {
   return (
-    <section aria-label="技术文章" className="content-atmosphere py-20 sm:py-28">
+    <section aria-label="技术文章" className="theme-writing py-20 sm:py-28">
       <Container>
         <SectionHeading index="03" title="技术文章" description="记录设计取舍、失败路径和能复用的工程方法。" href="/articles" linkLabel="进入文章索引" />
         <div className="mt-10 grid gap-x-8 md:grid-cols-3">{articles.slice(0, 3).map((article) => <ArticleCard key={article.slug} article={article} />)}</div>

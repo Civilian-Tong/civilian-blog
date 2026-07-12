@@ -11,7 +11,7 @@ import { TimelineItem } from '@/features/timeline/timeline-item'
 
 export function RecentTimeline() {
   return (
-    <section aria-label="个人动态" className="content-atmosphere py-20 sm:py-28">
+    <section aria-label="个人动态" className="theme-moments py-20 sm:py-28">
       <Container>
         <SectionHeading index="01" title="个人动态" description="生活、创造与偶然留下的片段。" href="/moments" linkLabel="查看全部动态" />
         <div className="mt-10 border-y border-white/10 px-1 sm:px-5">{timeline.slice(0, 3).map((entry) => <TimelineItem key={entry.id} entry={entry} />)}</div>

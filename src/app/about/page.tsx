@@ -12,7 +12,7 @@ import { projects } from '@/content/projects'
 
 export default function AboutPage() {
   return (
-    <main className="content-atmosphere min-h-screen pt-32">
+    <main className="theme-about min-h-screen pt-32">
       <Container className="max-w-5xl pb-24">
         <p className="font-mono text-xs tracking-[.2em] text-[#a8ccc7]">ABOUT / CIVILIAN_BLOG</p>
         <h1 className="mt-5 text-5xl font-medium tracking-[-.07em] sm:text-7xl">关于我</h1>
