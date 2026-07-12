@@ -1,0 +1,7 @@
+# [INPUT]：依赖 pnpm 11 的工作区与供应链策略
+# [OUTPUT]：仅允许 Next.js 必需的 sharp 与解析器执行安装期构建
+# [POS]：项目根部依赖安全边界，拒绝未审计包自动运行脚本
+# [PROTOCOL]：变更时更新此头部，然后检查 AGENTS.md
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
